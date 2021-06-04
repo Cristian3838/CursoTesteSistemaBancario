@@ -30,7 +30,7 @@ public class GerenciadoraClientes {
 	public Cliente pesquisaCliente (int idCliente) {
 
 		for (Cliente cliente : clientesDoBanco) {
-			if(cliente.getId() == idCliente)
+			if(cliente.getId() == idCliente) // Quando encontrar um cliente que tem um Id recebido por parâmetro
 				return cliente;
 		}
 		return null;
