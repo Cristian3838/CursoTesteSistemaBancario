@@ -51,9 +51,9 @@ public class GerenciadoraContasTest_Ex6 {
 		boolean sucesso = gerContas.transfereValor(idConta01, 100, idConta02);
 		
 		/* ========== Verificações ========== */
-		assertTrue(sucesso);
-		assertThat(conta02.getSaldo(), is(100.0));
-		assertThat(conta01.getSaldo(), is(100.0));
+		assertTrue(sucesso); 
+		assertThat(conta02.getSaldo(), is(100.0)); 
+		assertThat(conta01.getSaldo(), is(100.0)); //Verifica se a conta 01 ainda continua com 0
 	}
 	
 	/**
@@ -85,9 +85,10 @@ public class GerenciadoraContasTest_Ex6 {
 		boolean sucesso = gerContas.transfereValor(idConta01, 200, idConta02);
 		
 		/* ========== Verificações ========== */
-		assertTrue(sucesso);
-		assertThat(conta01.getSaldo(), is(-100.0));
-		assertThat(conta02.getSaldo(), is(200.0));
+		assertTrue(sucesso); //Verifica se o testes de saldo insuficente foi realizado com sucesso.
+		assertThat(conta01.getSaldo(), is(-100.0));//Verifica se a conta 02 ainda continua com 100 
+		//ou se transfeiriu ficou entrou no limite
+		assertThat(conta02.getSaldo(), is(200.0)); ////Verifica se a conta 02 
 	}
 
 }

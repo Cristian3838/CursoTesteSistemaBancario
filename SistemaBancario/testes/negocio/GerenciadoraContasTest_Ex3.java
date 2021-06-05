@@ -28,7 +28,7 @@ public class GerenciadoraContasTest_Ex3 {
 		contasDoBanco.add(conta01);
 		contasDoBanco.add(conta02);
 		
-		gerContas = new GerenciadoraContas(contasDoBanco);
+		gerContas = new GerenciadoraContas(contasDoBanco); //Insância a classe GerenciadoraContas.
 
 		/* ========== Execução ========== */
 		gerContas.transfereValor(1, 100, 2);

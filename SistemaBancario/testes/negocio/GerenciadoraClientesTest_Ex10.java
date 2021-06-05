@@ -45,6 +45,9 @@ public class GerenciadoraClientesTest_Ex10 {
 		gerClientes.limpa();
 	}
 	
+	/*============================================Pesquisa Cliente================================================================*/
+	
+	
 	/**
 	 * Teste básico da pesquisa de um cliente a partir do seu ID.
 	 * 
@@ -78,6 +81,10 @@ public class GerenciadoraClientesTest_Ex10 {
 		assertNull(cliente);
 		
 	}
+	
+	
+	
+	/*==========================Remove Cliente============================================================*/
 	
 	/**
 	 * Teste básico da remoção de um cliente a partir do seu ID.
@@ -124,6 +131,9 @@ public class GerenciadoraClientesTest_Ex10 {
 	 * @throws IdadeNaoPermitidaException 
 	 * @date 21/01/2035
 	 */
+	
+	
+	/*========================================Idade Aceitável===================================================*/
 	@Test
 	public void testClienteIdadeAceitavel() throws IdadeNaoPermitidaException {
 

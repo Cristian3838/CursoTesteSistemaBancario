@@ -43,6 +43,8 @@ public class GerenciadoraClientesTest_Ex8 {
 		// b) Criou arquivos e pastas aqui? Então...
 		// c) Inseriu clientes fictícios na base de dados especificamente para os testes desta classe? Então...
 	}
+	
+	
 
 	@After
 	public void tearDown() {
@@ -52,6 +54,11 @@ public class GerenciadoraClientesTest_Ex8 {
 		// b) Apaga todos eles aqui!!!
 		// c) Apaga eles aqui!!!
 	}
+	
+	
+	/*================================================================================================================*/
+	
+	
 	
 	/**
 	 * Teste básico da pesquisa de um cliente a partir do seu ID.

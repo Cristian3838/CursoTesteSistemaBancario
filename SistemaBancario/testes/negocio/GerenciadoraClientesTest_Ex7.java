@@ -19,12 +19,19 @@ import org.junit.Test;
  */
 public class GerenciadoraClientesTest_Ex7 {
 
-	private GerenciadoraClientes gerClientes;
-	private int idCLiente01 = 1;
-	private	int idCLiente02 = 2;
+	private GerenciadoraClientes gerClientes; //Variável global
+	private int idCLiente01 = 1; //Variável global
+	private	int idCLiente02 = 2; //Variável global
 	
-	@Before
-	public void setUp() {
+	/*=========================================Primeira e Quarta(Executada após dar um clear no cliente pesquisado
+	 * parte do teste==========================================*/
+	
+	@Before //  Antes  de executar o teste, através do comando @Before
+	//excuta o  trecho de código que é comum para  toda a classe.
+	
+	
+	
+	public void setUp() { 
 	
 		/* ========== Montagem do cenário ========== */
 		
@@ -39,14 +46,23 @@ public class GerenciadoraClientesTest_Ex7 {
 		
 		gerClientes = new GerenciadoraClientes(clientesDoBanco);
 	
-//		System.out.println("Before foi executado");
+	System.out.println("Before foi executado");
 	}
 
-	@After
+	
+	/*=========================================Terceira e Sexta(Após ter verificado a remoção do cliente 
+	 * parte do teste==========================================*/
+	
+	
+	@After // Depois de executar o teste Pesquisa Cliente, o sistema excuta o testes tearDown
+	//Terceira parte do teste
+	
+	//Significa que quando for executado o teste removeCliente não hverá comando ativo do teste pesquisaCliente
+	
 	public void tearDown() {
 		gerClientes.limpa();
 		
-//		System.out.println("After foi executado");
+		System.out.println("After foi executado");
 	}
 	
 	/**
@@ -55,7 +71,11 @@ public class GerenciadoraClientesTest_Ex7 {
 	 * @author Gustavo Farias
 	 * @date 21/01/2035
 	 */
-	@Test
+	
+	/*=========================================Segunda parte do teste==========================================*/
+	@Test 
+	
+	//Segunda parte do teste é executar o testes pesquisa cliente
 	public void testPesquisaCliente() {
 
 		/* ========== Execução ========== */
@@ -72,6 +92,8 @@ public class GerenciadoraClientesTest_Ex7 {
 	 * @author Gustavo Farias
 	 * @date 21/01/2035
 	 */
+	
+	/*=========================================Quinta parte do teste==========================================*/
 	@Test
 	public void testRemoveCliente() {
 		
